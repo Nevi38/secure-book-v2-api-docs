@@ -1,69 +1,71 @@
-# Show Accessible Accounts
+# API Songs
 
-Show all Accounts the active User can access and with what permission level.
-Includes their own Account if they have one.
+Returns a list of all songs of owner id.
 
-**URL** : `/api/accounts/`
+**URL** : `/api/{owner}/songs`
 
 **Method** : `GET`
 
-**Auth required** : YES
 
-**Permissions required** : None
+## Parameters
+**Required**
+`owner`:  Owner id (ObjectId)
 
-**Data constraints** : `{}`
+**Optional**
+`limit`: The maximum number of songs to return. Default is 8.
+`offset`: The number of songs to skip before starting to return results. Default is 0.
+
+## Example
+**Using Axios (JavaScript):**
+```javascript
+import axios from 'axios'
+
+const owner = "653a17dbab118c7cf50002c5";
+const endpoint = `http://localhost:3001/api/${owner}/songs?limit=2`;
+
+(async function() {
+  const response = await axios({
+    method: 'get',
+    url: endpoint
+  });
+
+  console.log(response.data)
+})()
+```
 
 ## Success Responses
 
-**Condition** : User can not see any Accounts.
-
 **Code** : `200 OK`
 
-**Content** : `{[]}`
+**Content** : `JSON (Array)`
 
-### OR
-
-**Condition** : User can see one or more Accounts.
-
-**Code** : `200 OK`
-
-**Content** : In this example, the User can see three Accounts as AccountAdmin
-`AA`, Viewer `VV`, and Owner `OO` - in that order:
+| Name          | Type    | Description                                         |
+|-------------- |---------|-----------------------------------------------------|
+| `_id`| ObjectId | Id song |
+| `name`  | string  | Name of the song |
+| `author`| string | Author of the song    |
+| `path` | string  | Url to song.                           |
+| `owner` | string  | Owner id (Song owner).      
 
 ```json
 [
-    {
-        "account": {
-            "id": 123,
-            "name": "Lots of Admins Project",
-            "enterprise": false,
-            "url": "http://testserver/api/accounts/123/"
+   {
+        "_id": {
+            "$oid": "6573d89382a3fd96a2f29d4d"
         },
-        "permission": "AA"
+        "name": "Điều cha chưa nói",
+        "author": "Ali Hoàng Dương",
+        "path": "1702090899889681117126.mp3",
+        "owner": "653a17dbab118c7cf50002c5"
     },
     {
-        "account": {
-            "id": 234,
-            "name": "Feel free to View this",
-            "enterprise": false,
-            "url": "http://testserver/api/accounts/234/"
+        "_id": {
+            "$oid": "6573d89382a3fd96a2f29d4e"
         },
-        "permission": "VV"
-    },
-    {
-        "account": {
-            "id": 345,
-            "name": "Mr Owner Project",
-            "enterprise": false,
-            "url": "http://testserver/api/accounts/345/"
-        },
-        "permission": "OO"
-    }
+        "name": "River Flow In You",
+        "author": "Yiruma",
+        "path": "1702090899889681117123.mp3",
+        "owner": "653a17dbab118c7cf50002c5"
+    }  
 ]
 ```
-| Name          | Type    | Description                                         |
-|-------------- |---------|-----------------------------------------------------|
-| ```verified```| boolean | Indicates whether GitHub considers the signature in this commit to be verified. |
-| ```reason```  | string  | The reason for the verified value. Possible values and their meanings are enumerated in the table below. |
-| ```signature```| string | The signature that was extracted from the commit.    |
-| ```payload``` | string  | The value that was signed.                           |
