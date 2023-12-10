@@ -14,13 +14,8 @@
 
 <br>
 
-<div style="display: flex">
-    <img style=" margin-right: 10px;border-radius: 50%; width: 50px; height: 50px" src="https://top10tphcm.com/wp-content/uploads/2023/06/anh-anime-buon-nu.jpg">
-    <div style="display: flex; flex-direction: column">
-        <b>Song API</b>
-        <p>Endpoints for viewing and manipulating Songs.</p>
-    </div>
-</div>
+<h4>Song API</h4>
+Endpoints for viewing and manipulating Songs.
 
 |Method|Endpoint|Tutorial|Allow|
 |------|---------|-------|-----|
@@ -31,13 +26,8 @@
 
 <br>
 
-<div style="display: flex">
-    <img style=" margin-right: 10px;border-radius: 50%; width: 50px; height: 50px" src="https://i.pinimg.com/originals/d7/80/75/d78075041fedd4813f0462433d15ebd8.jpg">
-    <div style="display: flex; flex-direction: column">
-        <b>Account API</b>
-        <p>Endpoints for viewing and manipulating the Account</p>
-    </div>
-</div>
+<h4>Account API</h4>
+Endpoints for viewing and manipulating the Account
 
 | Method | Endpoint                | Tutorial                              | Allow |
 |--------|-------------------------|---------------------------------------|-------|
@@ -45,13 +35,8 @@
 
 <br>
 
-<div style="display: flex;">
-    <img style="margin-right: 10px; border-radius: 50%; width: 50px; height: 50px" src="https://i.pinimg.com/originals/d7/80/75/d78075041fedd4813f0462433d15ebd8.jpg">
-    <div style="display: flex; flex-direction: column">
-        <b>Friend API</b>
-        <p>Endpoints for viewing and manipulating the Account</p>
-    </div>
-</div>
+<h4>Friend API</h4>
+Endpoints for viewing and manipulating the Friend
 
 | Method | Endpoint                  | Tutorial                              | Allow |
 |--------|---------------------------|---------------------------------------|-------|
@@ -60,4 +45,4 @@
 | <span style="font-size: 12px; display: inline-block; color: white; padding: 0 10px; background-color: red; border-radius: 20px;">DELETE</span> | /api/friends/{friendId} | [Remove a Friend](friends/delete.md) | <span style="color: green">Yes</span> |
 
 ## Author by Nevi38
-![ending](https://top10tphcm.com/wp-content/uploads/2023/06/anh-anime-buon-nu.jpg "ss")
+<img src="https://top10tphcm.com/wp-content/uploads/2023/06/anh-anime-buon-nu.jpg" style="width:34%;">
