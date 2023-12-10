@@ -1,17 +1,14 @@
 # Secure Book V2 API
 
-<div style="display: flex; align-items: center; justify-content: center;">
-<img style=" margin-right: 10px; border-radius: 50%; width: 200px; height: 200px" src="https://www.vietnamfineart.com.vn/wp-content/uploads/2023/03/hinh-anh-co-gai-cute-anime-8-min-4.jpg">
-<img style=" margin-right: 10px;border-radius: 50%; width: 200px; height: 200px" src="https://tranhdecors.com/wp-content/uploads/edd/2023/09/Hinh-nen-Anime-nu-hoang-mat-xanh-biec.jpg">
-<img style=" margin-right: 10px;border-radius: 50%; width: 200px; height: 200px" src="https://i.pinimg.com/originals/d7/80/75/d78075041fedd4813f0462433d15ebd8.jpg">
-</div>
+<img src="https://tranhdecors.com/wp-content/uploads/edd/2023/09/Hinh-nen-Anime-nu-hoang-mat-xanh-biec.jpg">
+
 
 ### HTTP method
 - `GET`: Retrieving resources.
 - `POST`: Creating resources.
 - `DELETE`: Deleting resources.
 - `PUT`: Replacing resources or collections of resources.
----
+
 ### Song API
 Endpoints for viewing and manipulating Songs.
 
