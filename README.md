@@ -11,9 +11,7 @@
 - `POST`: Creating resources.
 - `DELETE`: Deleting resources.
 - `PUT`: Replacing resources or collections of resources.
-
-<br>
-
+---
 ### Song API
 Endpoints for viewing and manipulating Songs.
 
