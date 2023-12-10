@@ -22,7 +22,6 @@ Endpoints for viewing and manipulating Songs.
 |<span style="font-size: 12px ;display: inline-block; color: white; padding: 0 10px; background-color: red; border-radius: 20px;">DELETE</span>|/api/{owner}/songs/{song}|[Delete an song](songs/delete.md)|<span style="color: green">Yes</span>|
 <span style="font-size: 12px ;display: inline-block; color: white; padding: 0 10px; background-color: #0967d5; border-radius: 20px;">PUT</span>|/api/{owner}/songs/{song}|[Edit an song](songs/put.md)| <span style="color: green">Yes</span> |
 
-<br>
 
 ### Account API
 Endpoints for viewing and manipulating the Account
@@ -31,7 +30,6 @@ Endpoints for viewing and manipulating the Account
 |--------|-------------------------|---------------------------------------|-------|
 | <span style="font-size: 12px; display: inline-block; color: white; padding: 0 10px; background-color: #0967d5; border-radius: 20px;">POST</span> | /api/account | [Create an account](account/post.md) | <span style="color: green;">Yes</span> |
 
-<br>
 
 ### Friend API
 Endpoints for viewing and manipulating the Friend
