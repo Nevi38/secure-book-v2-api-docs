@@ -14,7 +14,7 @@
 
 <br>
 
-<h4>Song API</h4>
+### Song API
 Endpoints for viewing and manipulating Songs.
 
 |Method|Endpoint|Tutorial|Allow|
@@ -26,7 +26,7 @@ Endpoints for viewing and manipulating Songs.
 
 <br>
 
-<h4>Account API</h4>
+### Account API
 Endpoints for viewing and manipulating the Account
 
 | Method | Endpoint                | Tutorial                              | Allow |
@@ -35,7 +35,7 @@ Endpoints for viewing and manipulating the Account
 
 <br>
 
-<h4>Friend API</h4>
+### Friend API
 Endpoints for viewing and manipulating the Friend
 
 | Method | Endpoint                  | Tutorial                              | Allow |
@@ -44,5 +44,5 @@ Endpoints for viewing and manipulating the Friend
 | <span style="font-size: 12px; display: inline-block; color: white; padding: 0 10px; background-color: #0967d5; border-radius: 20px;">POST</span> | /api/friends | [Add a Friend](friends/post.md) | <span style="color: green;">Yes</span> |
 | <span style="font-size: 12px; display: inline-block; color: white; padding: 0 10px; background-color: red; border-radius: 20px;">DELETE</span> | /api/friends/{friendId} | [Remove a Friend](friends/delete.md) | <span style="color: green">Yes</span> |
 
-## Author by Nevi38
+### Author by Nevi38
 <img src="https://top10tphcm.com/wp-content/uploads/2023/06/anh-anime-buon-nu.jpg" style="width:34%;">
